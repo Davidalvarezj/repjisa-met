@@ -1,7 +1,6 @@
-import React from 'react'
-import "./Contacto.css"
-
-
+import React from "react";
+import "./Contacto.css";
+import { Container, Row, Col } from "reactstrap";
 
 const Contacto = () => {
   return (
@@ -9,8 +8,8 @@ const Contacto = () => {
       <div className="container">
         <div className="row contact-row">
           <div className="col text-lefth text-white offset-1 mt-5 mb-0">
-            <h3 className="m-0 p-0 text-white">CONTACTENOS</h3>
-            <span className="text-warning h5">_________</span>
+            <h3 className="m-0 p-0 text-white">CONTÁCTENOS</h3>
+            <span className="text-warning h4">___________</span>
             <h4 className="text-warning mt-5">
               <i className="fa fa-phone" /> Teléfono
             </h4>
@@ -19,13 +18,8 @@ const Contacto = () => {
             <h4 className="text-warning m-0">
               <i className="fa fa-envelope-o" /> email
             </h4>
-            <a
-              role="button"
-              className="btn btn-link text-white mb-3"
-              href="jgjalt@gmail.com"
-            >
-              jgjalt@gmail.com
-            </a>
+            <p className="mb-3"> jgjalt@gmail.com</p>
+
             <h4 className="text-warning">
               <i className="fa-solid fa-location-dot" /> Dirección
             </h4>
@@ -41,21 +35,27 @@ const Contacto = () => {
               width="200"
               height="150"
               className=""
+              href="#home"
             />
-            {/* <a
-              href="https://wa.me/+573187165424?text=Hola%20estoy%20interesado%20en%20productos%20Representaciones%20JISA"
-              class="float"
-              target="_blank"
-            >
-              <i class="fa fa-whatsapp my-float"></i>
-            </a> */}
           </div>
         </div>
+
+        <Row>
+          <div className="col text-center text-white h5">
+            Copyright Representaciones JISA |
+            <a
+              role="button"
+              className="text-white ms-1"
+              href="http://www.representacionesjisa.com/"
+              target="_blank"
+            >
+              www.representacionesjisa.com
+            </a>
+          </div>
+        </Row>
       </div>
     </div>
   );
+};
 
-
-}
-
-export default Contacto
+export default Contacto;

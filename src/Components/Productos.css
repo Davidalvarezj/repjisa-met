@@ -1,23 +1,28 @@
-.Card.Img img{
-    height: 500px;
+
+
+.custom-card-img{
+        object-fit:cover !important;
+        height: 240px;
+        filter: brightness(45%);
 }
 
-.card-img-top{
-    height: 240px;
-    object-fit: cover;
-    filter: brightness(70%);
+
+.prod-button{
+    position: absolute;
+    bottom: 20px;
 }
+
 
 .card-title{
-    margin-bottom: 10px !important;
-    margin-top: 10px !important;
+
+margin-top: 20px !important;
 
 }
 
 .card{
-        height: 370px !important;
-        width: 410px !important;
-        cursor: pointer;
+        height: 240px !important;
+        /* width: 340px !important; */
+      
         box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
         transition: all 1s ease;
         margin: 0px;
@@ -29,8 +34,14 @@
         transition: all 1s ease;
         transform: scale(1.01);
 }
+.product-click:hover{
+    cursor: pointer;
+}
+
 .product-cont-title{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), linear-gradient(.25turn, #3c4662, #727d9c);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
@@ -48,26 +59,19 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 640px) {
     .card {
-        width: 150px !important;
-        height: 250px !important;
-        margin: 0;
+    
+        height: 160px !important;
+     
     }
-
+    .prod-button {
+        font-size: 13px !important;
+    }
     .card-title {
         margin-bottom: 0px !important;
-        margin-top: 0px !important;
+        margin-top: 10px !important;
+        font-size: 16px !important;
     }
     .card-img-top {
         height: 180px ;
@@ -76,5 +80,8 @@
     .alcmodal{
         width: 120px !important;
         height: 120px !important;
+    }
+    .card-text{
+        display: none;
     }
 }
